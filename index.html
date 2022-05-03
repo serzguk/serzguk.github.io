@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>My space</title>
+</head>
+<body>
+    <div class="bg">
+
+        <header>
+            <div class="conteiner">
+                <div class="heder__wrapper">
+                    <div class="logo">
+                        <img class="logo__img" src="./IMG/logo.svg" alt="logo">
+                        <img class="logo__img2" src="./IMG/paline.svg" alt="">
+                        <p class="name">My Space</p>
+                    </div>
+                    <div class="sub-menu">
+                        <span class="span span1"></span>
+                        <span class="span span2"></span>
+                        <span class="span span3"></span>
+                    </div>
+                    <div class="nav">
+
+                        <a href="#" class="nav__link nav__link1">Про нас</a>
+                        <a href="#" class="nav__link nav__link2">Новини</a>
+                        <a href="#" class="nav__link nav__link3">Блог</a>
+                        <a href="#" class="nav__link nav__link4"><img src="./IMG/Transparent Button.svg" alt=""></a>
+                    </div>
+                </div>          
+            </div>
+        </header>
+        <section class="main">
+            <div class="conteiner">
+                <div class="main__wrapper">
+                    <div class="planet">
+                        <img class="planet__img" id="planet__img" src="./IMG/Uran.svg" alt="">
+                    </div>
+                    <div class="card">
+                        <h1 class="card__heading">Електронна черга для польоту у космос</h1>
+                        <form action="submit" class="form">
+                            <label for="name" class="form-label">Ім'я</label>
+                            <input type="text" class="form-input" id="name" name="name" placeholder="Введіть ім'я" required>
+
+                            <label for="name" class="form-label">Телефон</label>
+                            <input type="tel" class="form-input" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+38(__) ___ __ __" required>
+
+                            <label for="select" class="form-label">Планета</label>
+                            <select name="" id="select" class="form-input select" required>
+                                <option value="venus">Венера</option>
+                                <option value="earth">Земля</option>
+                                <option value="mars">Марс</option>
+                                <option value="mercury">Меркурій</option>
+                                <option value="neptune">Нептун</option>
+                                <option value="uranus" selected>Уран</option>
+                            </select>
+                            <button class="form-submit-button" >Зареєструватися</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="conteiner">
+                <p class="footer__text">© 2022 My space. Всі права захищені.</p>
+            </div>
+        </footer>
+
+        <script src="./script.js"></script>
+    </div>
+</body>
+</html>
