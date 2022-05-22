@@ -4,75 +4,358 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <title>My space</title>
+    <link rel="stylesheet" href="/CSS/reset-style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>glivera-frontend.work</title>
 </head>
 <body>
-    <div class="bg">
-
-        <header>
-            <div class="conteiner">
-                <div class="heder__wrapper">
-                    <div class="logo">
-                        <img class="logo__img" src="./IMG/logo.svg" alt="logo">
-                        <img class="logo__img2" src="./IMG/paline.svg" alt="">
-                        <p class="name">My Space</p>
-                    </div>
-                    <div class="sub-menu">
-                        <span class="span span1"></span>
-                        <span class="span span2"></span>
-                        <span class="span span3"></span>
-                    </div>
-                    <div class="nav">
-
-                        <a href="#" class="nav__link nav__link1">Про нас</a>
-                        <a href="#" class="nav__link nav__link2">Новини</a>
-                        <a href="#" class="nav__link nav__link3">Блог</a>
-                        <a href="#" class="nav__link nav__link4"><img src="./IMG/Transparent Button.svg" alt=""></a>
-                    </div>
-                </div>          
+    <header>
+        <div class="top">
+            <div class="top__text-wrapper">
+                <p class="top__text1"><img class="top__img" src="./IMG/header/alert.svg" alt=""> You are not protected</p>
+                <p class="top__text2">Your IP Address: 107.3.176.194</p>
+                <p class="top__text3">Your ISP: Comcast Cable</p>
+                <p class="top__text4">Learn More ›</p>
             </div>
-        </header>
-        <section class="main">
-            <div class="conteiner">
-                <div class="main__wrapper">
-                    <div class="planet">
-                        <img class="planet__img" id="planet__img" src="./IMG/Uran.svg" alt="">
+            <div class="top__cross-wrapper">
+                <span class="top__cross cross1"></span>
+                <span class="top__cross cross2"></span>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="burger">
+                <span class="burger__line burger__line1"></span>
+                <span class="burger__line burger__line2"></span>
+                <span class="burger__line burger__line3"></span>
+            </div>
+            <div class="bottom__text-wrapper">
+                <p class="bottom__name">Company Name</p>
+            </div>
+            <ul class="bottom__nav">
+                <li><a class="bottom__link bottom__link1" href="">WHY US </a></li>
+                <li><a class="bottom__link bottom__link2" href="">VPN APPS</a></li>
+                <li><a class="bottom__link bottom__link3" href="">SUPPORT </a></li>
+                <li><a class="bottom__link bottom__link4" href="">Resources </a></li>
+            </ul>
+            <div class="bottom__btn-wrapper">
+                <a href="" class="bottom__btn bottom__btn1">LOG IN</a>
+                <a href="" class="bottom__btn bottom__btn2">GET STARTED</a>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="conteiner">
+            <div class="main__card">
+                <div class="main__img">
+                    <img src="./IMG/main__img.jpg" alt="">
+                </div>
+            
+                <div class="main__text-wrapper">
+                    <div>
+                        <p class="main__description">TV Addons: Legal battle against Canadian media giants demonstrates severe consequences facing developers accused of copyright infringement</p>
                     </div>
-                    <div class="card">
-                        <h1 class="card__heading">Електронна черга для польоту у космос</h1>
-                        <form action="submit" class="form">
-                            <label for="name" class="form-label">Ім'я</label>
-                            <input type="text" class="form-input" id="name" name="name" placeholder="Введіть ім'я" required>
-
-                            <label for="name" class="form-label">Телефон</label>
-                            <input type="tel" class="form-input" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+38(__) ___ __ __" required>
-
-                            <label for="select" class="form-label">Планета</label>
-                            <select name="" id="select" class="form-input select" required>
-                                <option value="venus">Венера</option>
-                                <option value="earth">Земля</option>
-                                <option value="mars">Марс</option>
-                                <option value="mercury">Меркурій</option>
-                                <option value="neptune">Нептун</option>
-                                <option value="uranus" selected>Уран</option>
-                            </select>
-                            <button class="form-submit-button" >Зареєструватися</button>
-                        </form>
+                    <div class="main__sub-text-wrapper">
+                        <p class="main__sub-tex1">Danica Sergison</p>
+                        <p class="main__sub-tex2"> |  JUL 08, 2018</p>
+                    </div>
+                    <div>
+                        <p class="main__sub-tex3">Copyright, News, Open Source, Privacy</p>
+                    </div>
+                    <div class="main__footer">
+                        <img src="./IMG/comment.svg" alt="" class="main__comments">
+                        <p class="main__footer-text">0</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <footer class="footer">
-            <div class="conteiner">
-                <p class="footer__text">© 2022 My space. Всі права захищені.</p>
+        </div>
+    </section>
+    <section class="tags">
+        <div class="conteiner">
+            <div class="tags__wrapper">
+                <div>
+                    <p class="tags__tags">TAGS:</p>
+                </div>
+                <div class="tags__link">
+                    <a class="tags__active" href="#">bitcoin</a>
+                    <a class="tags__active" href="#">bittorrent</a>
+                    <a class="tags__active" href="#">irc</a>
+                    <a class="tags__active" href="#">news</a>
+                    <a class="tags__active" href="#">privacy</a>
+                    <a class="tags__active" href="#">programming</a>
+                    <a class="tags__active" href="#">security</a>
+                </div>
+                <div class="tags__team-wrapper">
+                    <p class="tags__team">TEAM</p>
+                    <p class="tags__team">CONTACT</p>
+                </div>
             </div>
-        </footer>
+        </div>
+    </section>
+    <section class="recent-posts">
+        <div class="conteiner">
+            <div class="recent-posts__header-wrapper">
+                <h1 class="recent-posts__heading">Recent posts</h1>
+                <input class="recent-posts__input" type="text" value="Search blog">
+            </div>
+            <div class="recent-posts__wrapper">
+                <div class="recent-posts__cards">
+                    <div class="recent-posts__card recent-posts__card1">
+                        <img class="recent-posts__card-img" src="./IMG/card1.jpg" alt="">
+                        <div class="recent-posts__text-wrapper">
+                            <h2 class="recent-posts__heading">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</h2>
+                            <div class="recent-posts__date-wrapper">
+                                <p class="recent-posts__date1">Derek Zimmer</p>
+                                <p class="recent-posts__date2">|  JUL 25, 2018</p>
+                            </div>
+                            <p class="recent-posts__sub-text">Governments, Networking, Open Source, Privacy, Security</p>
+                            <div class="recent-posts__comments-wrapper">
+                                <img src="./IMG/comment.svg" alt="" class="recent-posts__img">
+                                <p class="recent-posts__zero">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-posts__card recent-posts__card2">
+                        <img class="recent-posts__card-img" src="./IMG/card2.jpg" alt="">
+                        <div class="recent-posts__text-wrapper">
+                            <h2 class="recent-posts__heading">How to get cheaper flights using a VPN</h2>
+                            <div class="recent-posts__date-wrapper">
+                                <p class="recent-posts__date1">Jayson</p>
+                                <p class="recent-posts__date2">|  JUL 24, 2018</p>
+                            </div>
+                            <p class="recent-posts__sub-text">Guides</p>
+                            <div class="recent-posts__comments-wrapper">
+                                <img src="./IMG/comment.svg" alt="" class="recent-posts__img">
+                                <p class="recent-posts__zero">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-posts__card recent-posts__card3">
+                        <img class="recent-posts__card-img" src="./IMG/card3.jpg" alt="">
+                        <div class="recent-posts__text-wrapper">
+                            <h2 class="recent-posts__heading">Net Neutrality was repealed, but the fight is far from over</h2>
+                            <div class="recent-posts__date-wrapper">
+                                <p class="recent-posts__date1">Chris Miller</p>
+                                <p class="recent-posts__date2">|  JUL 22, 2018</p>
+                            </div>
+                            <p class="recent-posts__sub-text">Governments, Net Neutrality, News</p>
+                            <div class="recent-posts__comments-wrapper">
+                                <img src="./IMG/comment.svg" alt="" class="recent-posts__img">
+                                <p class="recent-posts__zero">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-posts__card recent-posts__card1">
+                        <img src="./IMG/card1.jpg" alt="">
+                        <div class="recent-posts__text-wrapper">
+                            <h2 class="recent-posts__heading">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</h2>
+                            <div class="recent-posts__date-wrapper">
+                                <p class="recent-posts__date1">Derek Zimmer</p>
+                                <p class="recent-posts__date2">|  JUL 25, 2018</p>
+                            </div>
+                            <p class="recent-posts__sub-text">Governments, Networking, Open Source, Privacy, Security</p>
+                            <div class="recent-posts__comments-wrapper">
+                                <img src="./IMG/comment.svg" alt="" class="recent-posts__img">
+                                <p class="recent-posts__zero">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-posts__card recent-posts__card2">
+                        <img src="./IMG/card2.jpg" alt="">
+                        <div class="recent-posts__text-wrapper">
+                            <h2 class="recent-posts__heading">How to get cheaper flights using a VPN</h2>
+                            <div class="recent-posts__date-wrapper">
+                                <p class="recent-posts__date1">Jayson</p>
+                                <p class="recent-posts__date2">|  JUL 24, 2018</p>
+                            </div>
+                            <p class="recent-posts__sub-text">Guides</p>
+                            <div class="recent-posts__comments-wrapper">
+                                <img src="./IMG/comment.svg" alt="" class="recent-posts__img">
+                                <p class="recent-posts__zero">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-posts__card recent-posts__card3">
+                        <img src="./IMG/card3.jpg" alt="">
+                        <div class="recent-posts__text-wrapper">
+                            <h2 class="recent-posts__heading">Net Neutrality was repealed, but the fight is far from over</h2>
+                            <div class="recent-posts__date-wrapper">
+                                <p class="recent-posts__date1">Chris Miller</p>
+                                <p class="recent-posts__date2">|  JUL 22, 2018</p>
+                            </div>
+                            <p class="recent-posts__sub-text">Governments, Net Neutrality, News</p>
+                            <div class="recent-posts__comments-wrapper">
+                                <img src="./IMG/comment.svg" alt="" class="recent-posts__img">
+                                <p class="recent-posts__zero">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-posts__btn-wrapper">
+                        <a href="" class="recent-posts__btn">older posts</a>
 
-        <script src="./script.js"></script>
-    </div>
+                    </div>
+                </div>
+
+                <div class="lefr__wrapper">
+                    <div class="left__card">
+                        <div class="left__heading-wrapper">
+                            <img src="./IMG/left1.svg" alt="">
+                            <h3 class="left__heading">Announcements</h3>
+                        </div>
+                        <div class="left__text-wrapper">
+                            <p class="left__text">Upcoming Changes (Live Chat, Less Censorship, More Access)</p>
+                            <p class="left__text">New Servers (US Washington DC)</p>
+                            <p class="left__text">New Servers (US Denver)</p>
+                            <p class="left__text">Open Source: Releasing the PIA iOS Client</p>
+                            <p class="left__text">Opera Extension is now available</p>
+                        </div>
+                    </div>
+                    <div class="left__card">
+                        <div class="left__heading-wrapper">
+                            <img src="./IMG/left2.svg" alt="">
+                            <h3 class="left__heading">Popular posts</h3>
+                        </div>
+                        <div class="left__text-wrapper">
+                            <p class="left__text">The Gift of Privacy</p>
+                            <p class="left__text">UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous Gesture</p>
+                            <p class="left__text">About the PIA Client Security and VPN Security in General</p>
+                            <p class="left__text">A Private Net Is Just As Fundamental A Right As Freedom Of Speech</p>
+                            <p class="left__text">Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s, So Don’t Fall For That Lie</p>
+                        </div>
+                    </div>
+                    <img class="left__img3" src="./IMG/Bitmap.jpg" alt="">
+                    <h3 class="left__tags">Tag cloud</h3>
+                    <img src="./IMG/tags.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="prise">
+        <div class="conteiner">
+            <h2 class="prise__heading">Sign up today – 7 day money back guarantee</h2>
+            <div class="prise__cards">
+                <div class="prise-card">
+                    <h3 class="prise-card__heading">MONTHLY</h3>
+                    <div class="prise-card__rate">
+                        <p class="prise-card__rate-text1">$</p>
+                        <p class="prise-card__rate-text2">6.95</p>
+                        <p class="prise-card__rate-text3">/mo.</p>
+                    </div>
+                    <p class="prise-card__text">Includes all VPN features.</p>
+                    <a href="" class="prise-card__btn">SIGN UP</a>
+                </div>
+                <div class="prise-card">
+                     <h3 class="prise-card__heading">MONTHLY</h3>
+                    <div class="prise-card__rate2">
+                        <p class="prise-card__rate-text1">$</p>
+                        <p class="prise-card__rate-text2">6.95</p>
+                        <p class="prise-card__rate-text3">/mo.</p>
+                    </div>
+                    <div class="prise-card__text-wrapper">
+                        <p class="prise-card__text1">$166.80</p>
+                        <p class="prise-card__text2">$69.95 per two years</p>
+                    </div>
+                    <p class="prise-card__sub-text">Save 58%*</p>
+                    <a href="" class="prise-card__btn">SIGN UP</a>                    
+                </div>
+                <div class="prise-card">
+                     <h3 class="prise-card__heading">MONTHLY</h3>
+                    <div class="prise-card__rate2">
+                        <p class="prise-card__rate-text1">$</p>
+                        <p class="prise-card__rate-text2">6.95</p>
+                        <p class="prise-card__rate-text3">/mo.</p>
+                    </div>
+                    <div class="prise-card__text-wrapper">
+                        <p class="prise-card__text1">$166.80</p>
+                        <p class="prise-card__text2">$69.95 per two years</p>
+                    </div>
+                    <p class="prise-card__sub-text">Save 58%*</p>
+                    <a href="" class="prise-card__btn">SIGN UP</a>                        
+                </div>
+            </div>
+            <div class="payment">
+                <h3 class="payment__heading">Ways to pay:</h3>
+                <div class="payment__wrapper">
+                    <img src="./IMG/1.svg" alt="" class="payment__logo">
+                    <img src="./IMG/2.svg" alt="" class="payment__logo">
+                    <img src="./IMG/3.svg" alt="" class="payment__logo">
+                    <img src="./IMG/4.svg" alt="" class="payment__logo">
+                    <img src="./IMG/5.svg" alt="" class="payment__logo">
+                    <img src="./IMG/6.svg" alt="" class="payment__logo">
+                    <img src="./IMG/7.svg" alt="" class="payment__logo">
+                </div>
+
+            </div>
+            <div class="method__wrapper">
+                <a class="method__text" href="#">How to pay anonymously <img class="method__img" src="./IMG/arrow-right.svg" alt=""></a>
+                <a class="method__text" href="#">REDEEM GIFT CARD <img class="method__img" src="./IMG/arrow-right.svg" alt=""></a>
+            <div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="conteiner">
+            <h2 class="footer__name">Company Name</h2>
+            <div class="footer__wrapper">
+                <div class="footer__block1">
+                        <h3 class="footer__heading">Company</h3>
+                        <p class="footer__text">About Us</p>
+                        <p class="footer__text">Our Team</p>
+                        <p class="footer__text">Careers</p>
+                        <p class="footer__text">Press</p>
+                        <p class="footer__text">In the Media</p>
+                        <p class="footer__text">VPN Reviews</p>
+                        <p class="footer__text">Companies We Support</p>
+                        <p class="footer__text">Contact Us</p>
+                        <p class="footer__text">Blog</p>                    
+                </div>
+                <div class="footer__block-wrapper1">
+                    <div class="footer__block2">
+                        <h3 class="footer__heading">programs</h3>
+                        <p class="footer__text">Whitehat Security</p>                    
+                        <p class="footer__text">Affiliates</p>                    
+                    </div>
+                    <div class="footer__block3">
+                        <h3 class="footer__heading">learn more</h3>    
+                        <p class="footer__text">VPN Encryption</p>                    
+                        <p class="footer__text">Android VPN App</p>                    
+                        <p class="footer__text">iOS VPN App</p>                    
+                        <p class="footer__text">PIA Sitemap</p>                    
+                    </div>
+                </div>
+
+                <div class="footer__block4">
+                        <h3 class="footer__heading">LEGAL</h3>
+                        <p class="footer__text">Terms Of Service</p>                    
+                        <p class="footer__text">Privacy Policy</p>                    
+                        <p class="footer__text">DMCA Policy</p>                    
+                        <p class="footer__text">Export Control Policy</p>                    
+
+                </div>
+                <div class="footer__block-wrapper1">
+
+                    <div class="footer__block5">
+                        <h3 class="footer__heading">ABOUT</h3>
+                        <p class="footer__text">Private Internet Access is the leading VPN Service provider specializing in secure, encrypted VPN tunnels which create several layers of privacy and security providing you safety on the internet. Our service is backed by multiple gateways worldwide with access in 28+ countries, 44+ regions.</p>                    
+                        <p class="footer__text">Map data provided by Google.</p>                    
+                        <p class="footer__text">PC Mag Editor’s Choice award image reprinted with permission. © 2012 Ziff Davis, Inc. All Rights Reserved.</p>                    
+                        <p class="footer__text">PC Mag quote reprinted from www.pcmag.com with permission. © 2012 Ziff Davis, Inc. All Rights Reserved.</p>                    
+                        <p class="footer__text">© London Trust Media, Inc. All Rights Reserved.</p>                    
+
+                    </div>
+                    <div class="footer__block6">
+                        <h3 class="footer__heading">SOCIAL</h3>
+                        <div class="footer__social-wrapper">
+                            <img class="footer__social-img" src="./IMG/f.svg" alt="">
+                            <img class="footer__social-img" src="./IMG/t.svg" alt="">
+                            <img class="footer__social-img" src="./IMG/g.svg" alt="">
+                            <img class="footer__social-img" src="./IMG/i.svg" alt="">
+                            <img class="footer__social-img" src="./IMG/r.svg" alt="">
+                            <img class="footer__social-img" src="./IMG/y.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 </body>
 </html>
