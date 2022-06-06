@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;    
+	background: #181620;
+    margin: 0;
+}
+.container{
+    max-width: 1138px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.svg-wrapper {
+    height: 60px;
+    // margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+    &:hover .sub-menu{
+        display: block;
+    }
+}
+
+  
+.shape {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    stroke: #19f6e8;
+
+ }
+  
+.text {
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+}
+  
+@keyframes draw {
+    0% {
+      stroke-dasharray: 140 540;
+      stroke-dashoffset: -474;
+      stroke-width: 8px;
+    }
+    100% {
+      stroke-dasharray: 760;
+      stroke-dashoffset: 0;
+      stroke-width: 2px;
+    }
+}
+  
+.svg-wrapper:hover .shape {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+.header{
+    padding-top: 45px;
+}
+.sub-menu{
+    display: none;
+    padding: 10px 15px;
+    border: 1px solid #19f6e8;
+    background-color: #181620;
+    font-size: 18px;
+}
+.sub-menu-top{
+    margin-top: 30px;
+}
+
+h1, h2, h3, p{
+    color: #fff;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.les1 {
+    &__head{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-top: 35px;
+    }
+
+    &__wrapper {
+    }
+
+    &__header {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    &__sub-header {
+        margin-bottom: 15px;
+    }
+    &__img{
+        margin-bottom: 30px;
+    }
+    &__img1{
+        margin-bottom: 30px;
+    }
+    &__paragraph{
+        margin-bottom: 15px;
+    }
+
+}
+.les1-1{
+    margin-bottom: 30px;
+    &:last-child{
+        margin-bottom: 60px;
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 80px 0;
+}
