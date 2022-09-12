@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../IMG/bg.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.container {
+  width: 270px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.h-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.75);
+  margin-bottom: 60px;
+}
+
+p {
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 18px;
+}
+
+.section1 {
+  margin-bottom: 60px;
+}
+
+a {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-bottom: 18px;
+}
+
+.a1 {
+  padding: 10px 95px;
+  background: #27A3E3;
+}
+
+.a2 {
+  padding: 10px 91px;
+  background: linear-gradient(90.13deg, #F1D10D 0.11%, #F3116B 50.53%, #B845DA 99.91%);
+}
+
+.a3 {
+  padding: 10px 104px;
+  background: linear-gradient(269.96deg, #12EFEA 0.03%, #12EFEA 24.64%, #12EFEA 29.35%, #F7004C 70.18%, #F7004C 79.6%, #F7004C 100.54%);
+}
+
+.a4 {
+  padding: 10px 96px;
+  background: #FF0000;
+}
+
+.section2 {
+  padding: 60px 0;
+  background: rgba(0, 0, 0, 0.5);
+}
